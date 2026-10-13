@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Temukan suasana hijau dan waktu yang lebih santai di Naureen Mini Garden, Samarinda."
+    />
+    <meta name="theme-color" content="#183d30" />
+    <title>Naureen Mini Garden — Temukan jeda di Samarinda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="supabase-config.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#beranda" aria-label="Naureen Mini Garden, beranda">
+        <img src="assets/naureen-logo.jpg" alt="" />
+        <span>Naureen Mini Garden</span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Buka navigasi"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-navigation" id="main-navigation" aria-label="Navigasi utama">
+        <a href="#tentang">Jelajahi</a>
+        <a href="#suasana">Suasana</a>
+        <a href="#aktivitas">Aktivitas</a>
+        <a href="#spot-terbaru">Spot terbaru</a>
+        <a href="edukasi.html">Edukasi</a>
+        <a href="sejarah.html">Sejarah</a>
+        <a href="sewa-gazebo.html">Sewa gazebo</a>
+        <a href="terapi-ikan.html">Terapi ikan</a>
+        <a href="#ulasan">Kesan</a>
+        <a href="#kunjungan">Info kunjungan <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="beranda" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/naureen-mini-garden-hero.png"
+          alt="Papan Naureen Mini Garden di tengah taman yang rimbun"
+          fetchpriority="high"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Sebuah jeda hijau di Samarinda</p>
+          <h1 id="hero-title">Naureen <em>Mini Garden</em></h1>
+          <p class="hero-description">
+            Rencanakan hari yang lebih santai di Naureen Mini Garden, destinasi
+            wisata taman di Samarinda, Kalimantan Timur.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#tentang">
+              Jelajahi destinasi <span aria-hidden="true">↓</span>
+            </a>
+            <a class="button button-dark" href="galeri.html">
+              Lihat galeri <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-dark" href="sejarah.html">
+              Kisah Naureen <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-dark" href="sewa-gazebo.html">
+              Sewa gazebo <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-dark" href="terapi-ikan.html">
+              Terapi ikan <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-dark" href="edukasi.html">
+              Program edukasi <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="text-link"
+              href="https://www.google.com/maps/search/?api=1&query=Naureen+Mini+Garden%2C+Jl.+Bersama%2C+Sempaja+Utara%2C+Kec.+Samarinda+Utara%2C+Kota+Samarinda%2C+Kalimantan+Timur"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Lihat lokasi <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-caption">
+          <span>01</span>
+          <span>Tempat kecil untuk jeda yang berarti</span>
+        </div>
+        <a class="scroll-cue" href="#ringkasan" aria-label="Gulir ke informasi kunjungan">
+          ↓
+        </a>
+      </section>
+
+      <section class="visit-summary" id="ringkasan" aria-label="Ringkasan kunjungan">
+        <div class="summary-item">
+          <span class="summary-icon" aria-hidden="true">⌖</span>
+          <div>
+            <span class="summary-label">Destinasi</span>
+            <strong>Naureen Mini Garden</strong>
+          </div>
+        </div>
+        <div class="summary-item summary-location">
+          <span class="summary-icon" aria-hidden="true">◎</span>
+          <div>
+            <span class="summary-label">Lokasi</span>
+            <strong>Jl. Bersama, Sempaja Utara, Kec. Samarinda Utara, Kota Samarinda</strong>
+          </div>
+        </div>
+        <div class="summary-item">
+          <span class="summary-icon" aria-hidden="true">◷</span>
+          <div>
+            <span class="summary-label">Tiket &amp; jam</span>
+            <strong>Rp10.000/orang · Selasa–Minggu, 09.00–18.00 WITA · Senin tutup</strong>
+          </div>
+        </div>
+        <a class="summary-map" href="https://www.google.com/maps/search/?api=1&query=Naureen+Mini+Garden%2C+Jl.+Bersama%2C+Sempaja+Utara%2C+Kec.+Samarinda+Utara%2C+Kota+Samarinda%2C+Kalimantan+Timur" target="_blank" rel="noreferrer">
+          Cari lokasi <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+
+      <section class="intro section-wrap" id="tentang">
+        <div class="section-marker">
+          <span>01 / Kenali tempatnya</span>
+          <span aria-hidden="true">✳</span>
+        </div>
+        <div class="intro-copy">
+          <div>
+            <h2>Sedikit lebih dekat dengan <em>alam.</em></h2>
+            <p>
+              Naureen Mini Garden adalah destinasi wisata taman di Samarinda,
+              Kalimantan Timur. Sebuah ajakan untuk menikmati suasana hijau,
+              mengambil jeda dari rutinitas, dan menghabiskan waktu dengan cara
+              yang lebih santai.
+            </p>
+            <a class="underlined-link" href="#kunjungan">
+              Mulai rencanakan kunjungan <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <figure class="intro-photo">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-pond.png"
+              data-alt="Kolam taman dengan payung dan pantulan pepohonan di Naureen Mini Garden"
+              aria-label="Buka foto: Kolam taman dengan payung dan pantulan pepohonan di Naureen Mini Garden"
+            >
+              <img
+                src="assets/naureen-gallery-pond.png"
+                alt="Kolam taman dengan payung dan pantulan pepohonan di Naureen Mini Garden"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Kolam dan suasana taman Naureen Mini Garden.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="mood" id="suasana">
+        <div class="mood-inner">
+          <div class="mood-heading">
+            <div>
+              <p class="eyebrow">02 / Nikmati suasananya</p>
+              <h2>Datang untuk hijau.<br /><em>Pulang dengan cerita.</em></h2>
+            </div>
+            <p>
+              Hari yang menyenangkan tak selalu harus penuh rencana. Mulai saja
+              dengan udara terbuka dan waktu yang terasa milikmu.
+            </p>
+          </div>
+          <div class="gallery">
+            <figure class="gallery-card gallery-card-tall">
+              <button
+                class="photo-button"
+                type="button"
+                data-photo="assets/naureen-gallery-sunflowers.png"
+                data-alt="Bunga matahari tumbuh di taman Naureen Mini Garden"
+                aria-label="Buka foto: Bunga matahari tumbuh di taman Naureen Mini Garden"
+              >
+                <img
+                  src="assets/naureen-gallery-sunflowers.png"
+                  alt="Bunga matahari tumbuh di taman Naureen Mini Garden"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption><span>01</span> Bunga matahari di taman</figcaption>
+            </figure>
+            <figure class="gallery-card gallery-card-short">
+              <button
+                class="photo-button"
+                type="button"
+                data-photo="assets/naureen-gallery-fountain.png"
+                data-alt="Air mancur di tengah taman Naureen Mini Garden"
+                aria-label="Buka foto: Air mancur di tengah taman Naureen Mini Garden"
+              >
+                <img
+                  src="assets/naureen-gallery-fountain.png"
+                  alt="Air mancur di tengah taman Naureen Mini Garden"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption><span>02</span> Air mancur di tengah taman</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-activities section-wrap" id="aktivitas" aria-labelledby="activities-title">
+        <div class="section-marker">
+          <span>03 / Aktivitas di taman</span>
+          <span aria-hidden="true">✳</span>
+        </div>
+        <div class="home-activities-heading">
+          <h2 id="activities-title">Coba aktivitas seru <em>di tepi danau.</em></h2>
+          <p>
+            Luangkan waktu untuk relaksasi atau menikmati pengalaman memancing
+            di Naureen Mini Garden.
+          </p>
+        </div>
+        <div class="home-activities-grid">
+          <article class="home-activity-card">
+            <img
+              src="assets/naureen-free-fish-therapy.jpg"
+              alt="Pengunjung bermain dengan ikan nila merah di kolam terapi ikan"
+              loading="lazy"
+            />
+            <div class="home-activity-content">
+              <p class="eyebrow">Gratis</p>
+              <h3>Terapi ikan</h3>
+              <p>
+                Naureen Mini Garden menyediakan pengalaman bermain bersama ikan
+                nila merah yang bermanfaat untuk relaksasi.
+              </p>
+              <a class="underlined-link" href="terapi-ikan.html">
+                Lihat terapi ikan berbayar <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+          <article class="home-activity-card home-fishing-card">
+            <div class="fishing-card-icon" aria-hidden="true">⌁</div>
+            <div class="home-activity-content">
+              <p class="eyebrow">Aktivitas danau</p>
+              <h3>Pemancingan</h3>
+              <p>
+                Sewa alat pancing seharga Rp30.000 dan umpan Rp10.000. Pengunjung
+                dapat memancing di area danau yang telah disediakan. Ikan hasil
+                tangkapan boleh dibawa pulang tanpa ditimbang.
+              </p>
+              <a class="underlined-link" href="#kunjungan">
+                Rencanakan kunjungan <span aria-hidden="true">↓</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-spots section-wrap" id="spot-terbaru" aria-labelledby="spots-title">
+        <div class="section-marker">
+          <span>04 / Spot terbaru</span>
+          <span aria-hidden="true">✳</span>
+        </div>
+        <div class="home-activities-heading">
+          <h2 id="spots-title">Temukan spot dan permainan <em>terbaru.</em></h2>
+          <p>
+            Yuk kunjungi area baru dan coba permainan seru bersama keluarga,
+            teman, dan sahabat di Naureen Mini Garden.
+          </p>
+        </div>
+        <div class="home-spots-grid">
+          <article class="home-spot-card">
+            <div class="home-spot-gallery home-spot-bridge-gallery">
+              <img src="assets/naureen-spot-bridge-1.jpg" alt="Pemandangan jembatan spot terbaru Naureen Mini Garden" loading="lazy" />
+              <img src="assets/naureen-spot-bridge-2.jpg" alt="Pengunjung menikmati spot jembatan" loading="lazy" />
+              <img src="assets/naureen-spot-bridge-3.jpg" alt="Jembatan dengan pemandangan alam taman" loading="lazy" />
+            </div>
+            <div class="home-spot-content">
+              <p class="eyebrow">Spot foto · Pemandangan alam</p>
+              <h3>Spot Jembatan</h3>
+              <p>
+                Nikmati pemandangan alam dari jembatan terbaru di NMG yang
+                menjadi salah satu spot foto favorit pengunjung.
+              </p>
+              <strong class="home-spot-price">Rp5.000 <span>/ orang · tiket masuk spot</span></strong>
+            </div>
+          </article>
+
+          <article class="home-spot-card">
+            <div class="home-spot-gallery home-spot-hidden-gallery">
+              <img src="assets/naureen-hidden-garden-1.jpg" alt="Suasana Naureen Hidden Garden" loading="lazy" />
+              <img src="assets/naureen-hidden-garden-2.jpg" alt="Ruang hijau tersembunyi untuk bersantai" loading="lazy" />
+              <img src="assets/naureen-hidden-garden-3.jpg" alt="Pemandangan tanaman di Naureen Hidden Garden" loading="lazy" />
+              <img src="assets/naureen-hidden-garden-4.jpg" alt="Pengunjung menjelajahi area Hidden Garden" loading="lazy" />
+              <img src="assets/naureen-hidden-garden-5.jpg" alt="Sudut taman tersembunyi di Naureen Mini Garden" loading="lazy" />
+              <img src="assets/naureen-hidden-garden-6.jpg" alt="Jalur dan suasana alami di Hidden Garden" loading="lazy" />
+            </div>
+            <div class="home-spot-content">
+              <p class="eyebrow">Ruang hijau · Waktu bersama</p>
+              <h3>Naureen Hidden Garden</h3>
+              <p>
+                Taman tersembunyi dengan suasana alam yang nyaman untuk
+                berlibur bersama keluarga, teman, dan sahabat.
+              </p>
+              <strong class="home-spot-price">Rp5.000 <span>/ orang · tiket masuk spot</span></strong>
+            </div>
+          </article>
+
+          <article class="home-spot-card">
+            <div class="home-spot-gallery home-spot-nerf-gallery">
+              <img src="assets/naureen-nerf-fun-shooting.jpg" alt="Permainan Nerf Fun Shooting di Naureen Mini Garden" loading="lazy" />
+            </div>
+            <div class="home-spot-content">
+              <p class="eyebrow">Permainan · Fokus dan ketangkasan</p>
+              <h3>Nerf Fun Shooting</h3>
+              <p>
+                Permainan seru untuk melatih fokus, merangsang kemampuan
+                motorik, dan mengasah ketangkasan anak.
+              </p>
+              <ul class="home-spot-prices" aria-label="Harga Nerf Fun Shooting">
+                <li><strong>Rp15.000</strong> <span>/ 30 peluru</span></li>
+                <li><strong>Rp20.000</strong> <span>/ 40 peluru</span></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="visit section-wrap" id="kunjungan">
+        <div class="visit-copy">
+          <p class="eyebrow">05 / Sampai jumpa di sana</p>
+          <h2>Yuk, buat hari yang <em>berbeda.</em></h2>
+          <p>
+            Siapkan kunjunganmu ke Naureen Mini Garden. Pastikan untuk mengecek
+            informasi terbaru sebelum berangkat.
+          </p>
+          <a
+            class="button button-dark"
+            href="https://www.google.com/maps/search/?api=1&query=Naureen+Mini+Garden%2C+Jl.+Bersama%2C+Sempaja+Utara%2C+Kec.+Samarinda+Utara%2C+Kota+Samarinda%2C+Kalimantan+Timur"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span aria-hidden="true">⌖</span> Cari di Google Maps
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="visit-details" aria-label="Informasi kunjungan">
+          <div><span>Destinasi</span><strong>Naureen Mini Garden</strong></div>
+          <div>
+            <span>Lokasi</span>
+            <strong>Jl. Bersama, Sempaja Utara, Kec. Samarinda Utara, Kota Samarinda, Kalimantan Timur</strong>
+          </div>
+          <div><span>HTM</span><strong>Rp10.000 per orang</strong></div>
+          <div><span>Jam operasional</span><strong>Selasa–Minggu, 09.00–18.00 WITA</strong></div>
+          <div><span>Hari tutup</span><strong>Senin</strong></div>
+          <div>
+            <span>WhatsApp Admin 1</span>
+            <a href="https://wa.me/6282255650226" target="_blank" rel="noreferrer">+62 822-5565-0226 ↗</a>
+          </div>
+          <div>
+            <span>WhatsApp Admin 2</span>
+            <a href="https://wa.me/6285250345997" target="_blank" rel="noreferrer">+62 852-5034-5997 ↗</a>
+          </div>
+          <p>Informasi dapat berubah. Konfirmasi langsung sebelum berkunjung.</p>
+        </div>
+      </section>
+
+      <section class="ratings section-wrap" id="ulasan" aria-labelledby="ratings-title">
+        <div class="ratings-heading">
+          <div>
+            <p class="eyebrow">Cerita dari para pengunjung</p>
+            <h2 id="ratings-title">Kesan kecil, cerita yang <em>berarti.</em></h2>
+          </div>
+          <p>Sudah berkunjung? Bagikan pengalamanmu dan bantu orang lain menemukan hari yang menyenangkan di sini.</p>
+        </div>
+        <div class="ratings-panel">
+          <div class="rating-score" aria-live="polite">
+            <span class="rating-kicker">Rating pengunjung</span>
+            <div class="rating-score-main">
+              <strong class="rating-average" id="rating-average">—</strong>
+              <div>
+                <div class="rating-display" id="rating-display" aria-label="Belum ada rating">☆☆☆☆☆</div>
+                <span class="rating-count" id="rating-count">Memuat rating...</span>
+              </div>
+            </div>
+            <span class="rating-score-note">Setiap cerita membuat taman ini semakin dekat.</span>
+          </div>
+          <div class="rating-prompt">
+            <p>Bagikan cerita tentang kunjunganmu.</p>
+            <span>Nama dan ulasan wajib diisi. Rating bintang boleh ditambahkan.</span>
+          </div>
+        </div>
+        <p class="rating-storage-notice" id="rating-storage-notice">
+          Memeriksa koneksi penyimpanan ulasan...
+        </p>
+        <div class="reviews">
+          <form class="review-form" id="review-form">
+            <span class="review-form-step">Bagian 02 <span aria-hidden="true">/</span> Ceritakan</span>
+            <span class="review-form-title">Nama dan ceritamu</span>
+            <p class="review-prompt">Ceritamu bisa dibagikan dengan nama panggilan. Rating bintang bersifat opsional.</p>
+            <label class="review-field-label" for="review-name">Nama</label>
+            <input
+              id="review-name"
+              name="name"
+              type="text"
+              minlength="1"
+              maxlength="40"
+              autocomplete="name"
+              placeholder="Nama yang ingin ditampilkan"
+              required
+            />
+            <span class="review-field-label review-stars-label">Rating <span class="optional-label">opsional</span></span>
+            <fieldset class="rating-choices review-rating-choices">
+              <legend class="visually-hidden">Seberapa kamu menikmati kunjunganmu?</legend>
+              <div class="star-picker" role="group" aria-label="Pilih jumlah bintang">
+                <button type="button" class="star-choice" data-rating="1" aria-label="1 bintang" aria-pressed="false">★</button>
+                <button type="button" class="star-choice" data-rating="2" aria-label="2 bintang" aria-pressed="false">★</button>
+                <button type="button" class="star-choice" data-rating="3" aria-label="3 bintang" aria-pressed="false">★</button>
+                <button type="button" class="star-choice" data-rating="4" aria-label="4 bintang" aria-pressed="false">★</button>
+                <button type="button" class="star-choice" data-rating="5" aria-label="5 bintang" aria-pressed="false">★</button>
+              </div>
+              <span class="rating-choice-label" id="rating-choice-label" aria-live="polite">Pilih jumlah bintang</span>
+            </fieldset>
+            <label class="review-field-label" for="review-message">Apa yang paling kamu sukai?</label>
+            <p class="review-prompt">Momen, suasana, atau sudut favoritmu—ceritakan dengan kata-katamu sendiri.</p>
+            <textarea
+              id="review-message"
+              name="message"
+              rows="4"
+              minlength="10"
+              maxlength="500"
+              placeholder="Ceritakan pengalamanmu di Naureen Mini Garden..."
+              required
+            ></textarea>
+            <div class="review-form-footer">
+              <span class="review-character-count" id="review-character-count">0/500 karakter</span>
+              <button class="button button-dark review-submit" id="review-submit" type="submit" disabled>
+                Kirim ulasan <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <p class="review-status" id="review-status" role="status" aria-live="polite">
+              Isi nama dan ulasan untuk mengirim. Rating bintang boleh ditambahkan.
+            </p>
+          </form>
+          <div class="review-list-wrap">
+            <div class="review-list-heading">
+              <div>
+                <span class="review-form-step">Dari hati ke hati</span>
+                <h3>Cerita yang dibagikan</h3>
+              </div>
+              <span class="review-leaf" aria-hidden="true">✳</span>
+            </div>
+            <p class="review-list-status" id="review-list-status" role="status" aria-live="polite">
+              Memuat kesan pengunjung...
+            </p>
+            <ul class="review-list" id="review-list" aria-label="Kesan dari pengunjung"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#beranda">
+        <img src="assets/naureen-logo.jpg" alt="" />
+        <span>Naureen Mini Garden</span>
+      </a>
+      <p class="footer-address">
+        Jl. Bersama, Sempaja Utara, Kec. Samarinda Utara, Kota Samarinda,
+        Kalimantan Timur
+      </p>
+      <nav class="social-links" aria-label="Media sosial Naureen Mini Garden">
+        <a href="https://www.instagram.com/naureenminigarden/" target="_blank" rel="noreferrer">Instagram ↗</a>
+        <a href="https://www.tiktok.com/@naureenminigarden" target="_blank" rel="noreferrer">TikTok ↗</a>
+        <a href="https://www.facebook.com/minigardennauren/" target="_blank" rel="noreferrer">Facebook ↗</a>
+      </nav>
+      <a class="back-to-top" href="#beranda">Kembali ke atas ↑</a>
+      <p class="footer-credit">
+        Website dibuat oleh <strong>Muhammad Saverio Azkazachary Sahilin</strong>
+        <span aria-hidden="true"> · </span>
+        <a href="https://wa.me/6281253992786" target="_blank" rel="noreferrer">
+          Hubungi pembuat situs: +62 0812 5399 2786
+        </a>
+      </p>
+    </footer>
+
+    <dialog class="lightbox" aria-label="Foto suasana taman">
+      <button class="lightbox-close" type="button" aria-label="Tutup foto">×</button>
+      <img src="" alt="" />
+      <p></p>
+    </dialog>
+  </body>
+</html>

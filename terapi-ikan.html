@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Informasi terapi ikan berbayar nilem dan gararuffa di Naureen Mini Garden beserta harga dan durasinya."
+    />
+    <meta name="theme-color" content="#183d30" />
+    <title>Terapi Ikan — Naureen Mini Garden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Naureen Mini Garden, beranda">
+        <img src="assets/naureen-logo.jpg" alt="" />
+        <span>Naureen Mini Garden</span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Buka navigasi"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-navigation" id="main-navigation" aria-label="Navigasi terapi ikan">
+        <a href="index.html">Beranda <span aria-hidden="true">↗</span></a>
+        <a href="galeri.html">Galeri <span aria-hidden="true">↗</span></a>
+        <a href="sewa-gazebo.html">Sewa gazebo</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="gallery-page-intro">
+        <p class="eyebrow">Pengalaman relaksasi di Naureen Mini Garden</p>
+        <h1>Terapi ikan <em>berbayar.</em></h1>
+        <p>
+          Pilih jenis ikan dan durasi terapi yang sesuai untuk menikmati
+          pengalaman berbeda di taman.
+        </p>
+      </section>
+
+      <section class="fish-therapy section-wrap" aria-labelledby="fish-therapy-title">
+        <div class="fish-therapy-intro">
+          <p class="eyebrow">Dua jenis terapi ikan</p>
+          <h2 id="fish-therapy-title">Pilih sensasi yang <em>kamu suka.</em></h2>
+          <p>
+            Naureen Mini Garden menyediakan terapi ikan berbayar dengan ikan
+            nilem dan ikan gararuffa. Ikan nilem memberikan sensasi seperti
+            kaki terasa disetrum, sedangkan ikan gararuffa memberikan sensasi
+            seperti dipijat.
+          </p>
+        </div>
+
+        <figure class="fish-therapy-photo">
+          <img
+            src="assets/naureen-fish-therapy.jpg"
+            alt="Kolam terapi ikan di Naureen Mini Garden"
+            fetchpriority="high"
+          />
+        </figure>
+
+        <div class="fish-therapy-types">
+          <article class="fish-therapy-type">
+            <p class="eyebrow">Terapi ikan</p>
+            <h3>Ikan Nilem</h3>
+            <p>Sensasi terapi seperti kaki terasa disetrum.</p>
+            <dl class="fish-therapy-prices">
+              <div><dt>15 menit</dt><dd>Rp20.000</dd></div>
+              <div><dt>30 menit</dt><dd>Rp35.000</dd></div>
+              <div><dt>60 menit</dt><dd>Rp60.000</dd></div>
+            </dl>
+          </article>
+          <article class="fish-therapy-type">
+            <p class="eyebrow">Terapi ikan</p>
+            <h3>Ikan Gararuffa</h3>
+            <p>Sensasi terapi seperti kaki dipijat.</p>
+            <dl class="fish-therapy-prices">
+              <div><dt>15 menit</dt><dd>Rp25.000</dd></div>
+              <div><dt>30 menit</dt><dd>Rp40.000</dd></div>
+              <div><dt>60 menit</dt><dd>Rp65.000</dd></div>
+            </dl>
+          </article>
+        </div>
+        <p class="fish-therapy-note">
+          Harga dan ketersediaan dapat berubah. Silakan konfirmasi langsung
+          kepada admin sebelum berkunjung.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="index.html">
+        <img src="assets/naureen-logo.jpg" alt="" />
+        <span>Naureen Mini Garden</span>
+      </a>
+      <p class="footer-address">
+        Jl. Bersama, Sempaja Utara, Kec. Samarinda Utara, Kota Samarinda,
+        Kalimantan Timur
+      </p>
+      <nav class="social-links" aria-label="Media sosial Naureen Mini Garden">
+        <a href="https://www.instagram.com/naureenminigarden/" target="_blank" rel="noreferrer">Instagram ↗</a>
+        <a href="https://www.tiktok.com/@naureenminigarden" target="_blank" rel="noreferrer">TikTok ↗</a>
+        <a href="https://www.facebook.com/minigardennauren/" target="_blank" rel="noreferrer">Facebook ↗</a>
+      </nav>
+      <a class="back-to-top" href="#">Kembali ke atas ↑</a>
+      <p class="footer-credit">
+        Website dibuat oleh <strong>Muhammad Saverio Azkazachary Sahilin</strong>
+        <span aria-hidden="true"> · </span>
+        <a href="https://wa.me/6281253992786" target="_blank" rel="noreferrer">
+          Hubungi pembuat situs: +62 0812 5399 2786
+        </a>
+      </p>
+    </footer>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navigation = document.querySelector(".main-navigation");
+
+      menuToggle.addEventListener("click", () => {
+        const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!isExpanded));
+        menuToggle.setAttribute("aria-label", isExpanded ? "Buka navigasi" : "Tutup navigasi");
+        navigation.classList.toggle("is-open", !isExpanded);
+      });
+
+      navigation.addEventListener("click", (event) => {
+        if (event.target.closest("a")) {
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.setAttribute("aria-label", "Buka navigasi");
+          navigation.classList.remove("is-open");
+        }
+      });
+    </script>
+  </body>
+</html>

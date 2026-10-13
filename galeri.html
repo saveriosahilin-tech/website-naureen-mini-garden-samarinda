@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Lihat foto, video, dan cerita pengunjung Naureen Mini Garden di Samarinda."
+    />
+    <meta name="theme-color" content="#183d30" />
+    <title>Galeri — Naureen Mini Garden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="supabase-config.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Naureen Mini Garden, beranda">
+        <img src="assets/naureen-logo.jpg" alt="" />
+        <span>Naureen Mini Garden</span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Buka navigasi"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-navigation" id="main-navigation" aria-label="Navigasi galeri">
+        <a href="#foto">Foto</a>
+        <a href="#video">Video</a>
+        <a href="sejarah.html">Sejarah</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="index.html">Beranda <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="gallery-page-intro">
+        <p class="eyebrow">Cerita dari Naureen Mini Garden</p>
+        <h1>Galeri <em>Naureen.</em></h1>
+        <p>
+          Lihat suasana taman, temukan video terbaru, dan baca cerita dari para
+          pengunjung.
+        </p>
+      </section>
+
+      <section class="media-gallery section-wrap" id="foto" aria-labelledby="photo-title">
+        <div class="section-marker">
+          <span>01 / Foto suasana</span>
+          <span aria-hidden="true">✳</span>
+        </div>
+        <h2 id="photo-title">Sudut hijau untuk <em>dinikmati.</em></h2>
+        <div class="media-gallery-grid">
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-mini-garden-hero.png"
+              data-alt="Papan Naureen Mini Garden di tengah taman yang rimbun"
+              aria-label="Buka foto: Papan Naureen Mini Garden di tengah taman yang rimbun"
+            >
+              <img
+                src="assets/naureen-mini-garden-hero.png"
+                alt="Papan Naureen Mini Garden di tengah taman yang rimbun"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Papan Naureen Mini Garden</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-fountain.png"
+              data-alt="Air mancur di tengah taman Naureen Mini Garden"
+              aria-label="Buka foto: Air mancur di tengah taman Naureen Mini Garden"
+            >
+              <img
+                src="assets/naureen-gallery-fountain.png"
+                alt="Air mancur di tengah taman Naureen Mini Garden"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Air mancur di tengah taman</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-sign.png"
+              data-alt="Papan nama Naureen Mini Garden di antara dedaunan"
+              aria-label="Buka foto: Papan nama Naureen Mini Garden di antara dedaunan"
+            >
+              <img
+                src="assets/naureen-gallery-sign.png"
+                alt="Papan nama Naureen Mini Garden di antara dedaunan"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Papan taman di antara dedaunan</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-deck.png"
+              data-alt="Area dek dan tempat duduk di Naureen Mini Garden"
+              aria-label="Buka foto: Area dek dan tempat duduk di Naureen Mini Garden"
+            >
+              <img
+                src="assets/naureen-gallery-deck.png"
+                alt="Area dek dan tempat duduk di Naureen Mini Garden"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Dek dan area bersantai</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-pond.png"
+              data-alt="Kolam taman dengan payung dan pantulan pepohonan"
+              aria-label="Buka foto: Kolam taman dengan payung dan pantulan pepohonan"
+            >
+              <img
+                src="assets/naureen-gallery-pond.png"
+                alt="Kolam taman dengan payung dan pantulan pepohonan"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Kolam dan suasana taman</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-sunflowers.png"
+              data-alt="Bunga matahari tumbuh di taman Naureen Mini Garden"
+              aria-label="Buka foto: Bunga matahari tumbuh di taman Naureen Mini Garden"
+            >
+              <img
+                src="assets/naureen-gallery-sunflowers.png"
+                alt="Bunga matahari tumbuh di taman Naureen Mini Garden"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Bunga matahari di taman</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-garden-entrance.png"
+              data-alt="Pintu masuk taman Naureen Mini Garden yang rindang"
+              aria-label="Buka foto: Pintu masuk taman Naureen Mini Garden yang rindang"
+            >
+              <img
+                src="assets/naureen-gallery-garden-entrance.png"
+                alt="Pintu masuk taman Naureen Mini Garden yang rindang"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Pintu masuk yang rindang</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-entrance-fountain.png"
+              data-alt="Gerbang Naureen Mini Garden dengan air mancur di tengah taman"
+              aria-label="Buka foto: Gerbang Naureen Mini Garden dengan air mancur di tengah taman"
+            >
+              <img
+                src="assets/naureen-gallery-entrance-fountain.png"
+                alt="Gerbang Naureen Mini Garden dengan air mancur di tengah taman"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Gerbang dan air mancur taman</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-garden-huts.png"
+              data-alt="Deretan sarang lebah kelulut di Naureen Mini Garden"
+              aria-label="Buka foto: Deretan sarang lebah kelulut di Naureen Mini Garden"
+            >
+              <img
+                src="assets/naureen-gallery-garden-huts.png"
+                alt="Deretan sarang lebah kelulut di Naureen Mini Garden"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Deretan sarang lebah kelulut</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-garden-pergola.png"
+              data-alt="Pergola dekoratif di tengah taman Naureen Mini Garden"
+              aria-label="Buka foto: Pergola dekoratif di tengah taman Naureen Mini Garden"
+            >
+              <img
+                src="assets/naureen-gallery-garden-pergola.png"
+                alt="Pergola dekoratif di tengah taman Naureen Mini Garden"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Pergola dekoratif di area taman</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-garden-sign.png"
+              data-alt="Papan nama Naureen Mini Garden di ujung jalan setapak"
+              aria-label="Buka foto: Papan nama Naureen Mini Garden di ujung jalan setapak"
+            >
+              <img
+                src="assets/naureen-gallery-garden-sign.png"
+                alt="Papan nama Naureen Mini Garden di ujung jalan setapak"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Jalan setapak menuju papan taman</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-fountain-courtyard.png"
+              data-alt="Air mancur dan jalan batu di area taman Naureen Mini Garden"
+              aria-label="Buka foto: Air mancur dan jalan batu di area taman Naureen Mini Garden"
+            >
+              <img
+                src="assets/naureen-gallery-fountain-courtyard.png"
+                alt="Air mancur dan jalan batu di area taman Naureen Mini Garden"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Air mancur di tengah taman</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-koi-pond.png"
+              data-alt="Kolam terapi ikan dan pengalaman pengunjung di Naureen Mini Garden"
+              aria-label="Buka foto: Kolam terapi ikan dan pengalaman pengunjung di Naureen Mini Garden"
+            >
+              <img
+                src="assets/naureen-gallery-koi-pond.png"
+                alt="Kolam terapi ikan dan pengalaman pengunjung di Naureen Mini Garden"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Kolam terapi ikan dan pengalaman pengunjung</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-visitor-photo.png"
+              data-alt="Tiga pengunjung berfoto di depan papan Naureen Mini Garden"
+              aria-label="Buka foto: Tiga pengunjung berfoto di depan papan Naureen Mini Garden"
+            >
+              <img
+                src="assets/naureen-gallery-visitor-photo.png"
+                alt="Tiga pengunjung berfoto di depan papan Naureen Mini Garden"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Momen pengunjung di depan papan taman</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-pond-deck.png"
+              data-alt="Dek kayu di atas kolam dan taman yang rimbun"
+              aria-label="Buka foto: Dek kayu di atas kolam dan taman yang rimbun"
+            >
+              <img
+                src="assets/naureen-gallery-pond-deck.png"
+                alt="Dek kayu di atas kolam dan taman yang rimbun"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Dek kayu di tepi kolam</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-cottages.png"
+              data-alt="Pondok segitiga Naureen Mini Garden berdiri di atas kolam"
+              aria-label="Buka foto: Pondok segitiga Naureen Mini Garden berdiri di atas kolam"
+            >
+              <img
+                src="assets/naureen-gallery-cottages.png"
+                alt="Pondok segitiga Naureen Mini Garden berdiri di atas kolam"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Pondok segitiga di atas kolam</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-red-pond-gazebo.png"
+              data-alt="Jembatan merah di tepi danau Naureen Mini Garden"
+              aria-label="Buka foto: Jembatan merah di tepi danau Naureen Mini Garden"
+            >
+              <img
+                src="assets/naureen-gallery-red-pond-gazebo.png"
+                alt="Jembatan merah di tepi danau Naureen Mini Garden"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Jembatan merah di tepi danau Naureen Mini Garden</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-garden-arch-visitor.png"
+              data-alt="Pengunjung berpose di gerbang taman yang rimbun"
+              aria-label="Buka foto: Pengunjung berpose di gerbang taman yang rimbun"
+            >
+              <img
+                src="assets/naureen-gallery-garden-arch-visitor.png"
+                alt="Pengunjung berpose di gerbang taman yang rimbun"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Pengunjung di gerbang taman</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-playground.png"
+              data-alt="Perosotan warna-warni di area bermain Naureen Mini Garden"
+              aria-label="Buka foto: Perosotan warna-warni di area bermain Naureen Mini Garden"
+            >
+              <img
+                src="assets/naureen-gallery-playground.png"
+                alt="Perosotan warna-warni di area bermain Naureen Mini Garden"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Area bermain anak</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-flower-archway.png"
+              data-alt="Gerbang taman dengan bunga dan jalan setapak"
+              aria-label="Buka foto: Gerbang taman dengan bunga dan jalan setapak"
+            >
+              <img
+                src="assets/naureen-gallery-flower-archway.png"
+                alt="Gerbang taman dengan bunga dan jalan setapak"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Gerbang bunga menuju taman</figcaption>
+          </figure>
+          <figure class="media-gallery-card">
+            <button
+              class="photo-button"
+              type="button"
+              data-photo="assets/naureen-gallery-tropical-garden.png"
+              data-alt="Taman tropis dengan aneka tanaman dan jalan setapak"
+              aria-label="Buka foto: Taman tropis dengan aneka tanaman dan jalan setapak"
+            >
+              <img
+                src="assets/naureen-gallery-tropical-garden.png"
+                alt="Taman tropis dengan aneka tanaman dan jalan setapak"
+                loading="lazy"
+              />
+            </button>
+            <figcaption>Suasana taman tropis</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="video-gallery" id="video" aria-labelledby="video-title">
+        <div class="video-gallery-inner">
+          <p class="eyebrow">02 / Video terbaru</p>
+          <h2 id="video-title">Lihat lebih banyak <em>cerita.</em></h2>
+          <p class="video-gallery-description">
+            Kunjungi media sosial resmi Naureen Mini Garden untuk melihat video
+            dan suasana terbaru.
+          </p>
+          <div class="video-gallery-feature">
+            <iframe
+              src="https://www.tiktok.com/player/v1/7560650788268264760?music_info=1&amp;description=1&amp;autoplay=0"
+              title="Video Naureen Mini Garden dari @yukkulineran._ di TikTok"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+            <iframe
+              src="https://www.tiktok.com/player/v1/7518729905585016071?music_info=1&amp;description=1&amp;autoplay=0"
+              title="Video Naureen Mini Garden dari @mainmakan.id di TikTok"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+            <iframe
+              src="https://www.tiktok.com/player/v1/7384347132620262661?music_info=1&amp;description=1&amp;autoplay=0"
+              title="Video Naureen Mini Garden dari @duniakulinersamarinda di TikTok"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+            <iframe
+              src="https://www.tiktok.com/player/v1/7660468950966226194?music_info=1&amp;description=1&amp;autoplay=0"
+              title="Video Naureen Mini Garden dari @gibran_tips.and.trick di TikTok"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+            <iframe
+              src="https://www.tiktok.com/player/v1/7620754362427641108?music_info=1&amp;description=1&amp;autoplay=0"
+              title="Video dari @mamagilang73 di TikTok"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+            <iframe
+              src="https://www.instagram.com/reel/DX_VToGtduK/embed/"
+              title="Reel Naureen Mini Garden dari @masaldi.id di Instagram"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+            <iframe
+              class="youtube-video"
+              src="https://www.youtube-nocookie.com/embed/sk2cjaP70oY"
+              title="MEKATRIPPY - Jajak Wisata Nauren Mini Garden Samarinda"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <p class="youtube-video-fallback">
+            Pemutar Instagram bermasalah?
+            <a href="https://www.instagram.com/reel/DX_VToGtduK/" target="_blank" rel="noreferrer">
+              Tonton Reel di Instagram <span aria-hidden="true">↗</span>
+            </a>
+          </p>
+          <p class="youtube-video-fallback">
+            Pemutar bermasalah?
+            <a href="https://www.youtube.com/watch?v=sk2cjaP70oY" target="_blank" rel="noreferrer">
+              Tonton video di YouTube <span aria-hidden="true">↗</span>
+            </a>
+          </p>
+          <div class="video-gallery-links">
+            <a
+              class="video-gallery-link"
+              href="https://www.tiktok.com/@santapdulunah/video/7269578115611905286"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="video-play" aria-hidden="true">▶</span>
+              <span><strong>Tonton video TikTok</strong><small>@santapdulunah</small></span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="video-gallery-link"
+              href="https://www.tiktok.com/@naureenminigarden"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="video-play" aria-hidden="true">▶</span>
+              <span><strong>Tonton di TikTok</strong><small>@naureenminigarden</small></span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="video-gallery-link"
+              href="https://www.instagram.com/naureenminigarden/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="video-play" aria-hidden="true">▶</span>
+              <span><strong>Lihat di Instagram</strong><small>@naureenminigarden</small></span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="ratings section-wrap" id="testimoni" aria-labelledby="ratings-title">
+        <div class="ratings-heading">
+          <div>
+            <p class="eyebrow">03 / Cerita para pengunjung</p>
+            <h2 id="ratings-title">Kesan kecil, cerita yang <em>berarti.</em></h2>
+          </div>
+          <p>Sudah berkunjung? Bagikan pengalamanmu dan bantu orang lain menemukan hari yang menyenangkan di sini.</p>
+        </div>
+        <div class="ratings-panel">
+          <div class="rating-score" aria-live="polite">
+            <span class="rating-kicker">Rating pengunjung</span>
+            <div class="rating-score-main">
+              <strong class="rating-average" id="rating-average">—</strong>
+              <div>
+                <div class="rating-display" id="rating-display" aria-label="Belum ada rating">☆☆☆☆☆</div>
+                <span class="rating-count" id="rating-count">Memuat rating...</span>
+              </div>
+            </div>
+            <span class="rating-score-note">Setiap cerita membuat taman ini semakin dekat.</span>
+          </div>
+          <div class="rating-prompt">
+            <p>Bagikan cerita tentang kunjunganmu.</p>
+            <span>Nama dan ulasan wajib diisi. Rating bintang boleh ditambahkan.</span>
+          </div>
+        </div>
+        <p class="rating-storage-notice" id="rating-storage-notice">
+          Memeriksa koneksi penyimpanan ulasan...
+        </p>
+        <div class="reviews">
+          <form class="review-form" id="review-form">
+            <span class="review-form-step">Bagian 02 <span aria-hidden="true">/</span> Ceritakan</span>
+            <span class="review-form-title">Nama dan ceritamu</span>
+            <p class="review-prompt">Ceritamu bisa dibagikan dengan nama panggilan. Rating bintang bersifat opsional.</p>
+            <label class="review-field-label" for="review-name">Nama</label>
+            <input
+              id="review-name"
+              name="name"
+              type="text"
+              minlength="1"
+              maxlength="40"
+              autocomplete="name"
+              placeholder="Nama yang ingin ditampilkan"
+              required
+            />
+            <span class="review-field-label review-stars-label">Rating <span class="optional-label">opsional</span></span>
+            <fieldset class="rating-choices review-rating-choices">
+              <legend class="visually-hidden">Seberapa kamu menikmati kunjunganmu?</legend>
+              <div class="star-picker" role="group" aria-label="Pilih jumlah bintang">
+                <button type="button" class="star-choice" data-rating="1" aria-label="1 bintang" aria-pressed="false">★</button>
+                <button type="button" class="star-choice" data-rating="2" aria-label="2 bintang" aria-pressed="false">★</button>
+                <button type="button" class="star-choice" data-rating="3" aria-label="3 bintang" aria-pressed="false">★</button>
+                <button type="button" class="star-choice" data-rating="4" aria-label="4 bintang" aria-pressed="false">★</button>
+                <button type="button" class="star-choice" data-rating="5" aria-label="5 bintang" aria-pressed="false">★</button>
+              </div>
+              <span class="rating-choice-label" id="rating-choice-label" aria-live="polite">Pilih jumlah bintang</span>
+            </fieldset>
+            <label class="review-field-label" for="review-message">Apa yang paling kamu sukai?</label>
+            <p class="review-prompt">Momen, suasana, atau sudut favoritmu—ceritakan dengan kata-katamu sendiri.</p>
+            <textarea
+              id="review-message"
+              name="message"
+              rows="4"
+              minlength="10"
+              maxlength="500"
+              placeholder="Ceritakan pengalamanmu di Naureen Mini Garden..."
+              required
+            ></textarea>
+            <div class="review-form-footer">
+              <span class="review-character-count" id="review-character-count">0/500 karakter</span>
+              <button class="button button-dark review-submit" id="review-submit" type="submit" disabled>
+                Kirim ulasan <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <p class="review-status" id="review-status" role="status" aria-live="polite">
+              Isi nama dan ulasan untuk mengirim. Rating bintang boleh ditambahkan.
+            </p>
+          </form>
+          <div class="review-list-wrap">
+            <div class="review-list-heading">
+              <div>
+                <span class="review-form-step">Dari hati ke hati</span>
+                <h3>Cerita yang dibagikan</h3>
+              </div>
+              <span class="review-leaf" aria-hidden="true">✳</span>
+            </div>
+            <p class="review-list-status" id="review-list-status" role="status" aria-live="polite">
+              Memuat kesan pengunjung...
+            </p>
+            <ul class="review-list" id="review-list" aria-label="Kesan dari pengunjung"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="index.html">
+        <img src="assets/naureen-logo.jpg" alt="" />
+        <span>Naureen Mini Garden</span>
+      </a>
+      <p class="footer-address">
+        Jl. Bersama, Sempaja Utara, Kec. Samarinda Utara, Kota Samarinda,
+        Kalimantan Timur
+      </p>
+      <nav class="social-links" aria-label="Media sosial Naureen Mini Garden">
+        <a href="https://www.instagram.com/naureenminigarden/" target="_blank" rel="noreferrer">Instagram ↗</a>
+        <a href="https://www.tiktok.com/@naureenminigarden" target="_blank" rel="noreferrer">TikTok ↗</a>
+        <a href="https://www.facebook.com/minigardennauren/" target="_blank" rel="noreferrer">Facebook ↗</a>
+      </nav>
+      <a class="back-to-top" href="#">Kembali ke atas ↑</a>
+      <p class="footer-credit">
+        Website dibuat oleh <strong>Muhammad Saverio Azkazachary Sahilin</strong>
+        <span aria-hidden="true"> · </span>
+        <a href="https://wa.me/6281253992786" target="_blank" rel="noreferrer">
+          Hubungi pembuat situs: +62 0812 5399 2786
+        </a>
+      </p>
+    </footer>
+
+    <dialog class="lightbox" aria-label="Foto suasana taman">
+      <button class="lightbox-close" type="button" aria-label="Tutup foto">×</button>
+      <img src="" alt="" />
+      <p></p>
+    </dialog>
+  </body>
+</html>
