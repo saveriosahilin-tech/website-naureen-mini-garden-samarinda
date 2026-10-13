@@ -177,10 +177,15 @@ h2 em {
 }
 
 .hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 18px 24px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 20px;
+  max-width: 760px;
+  align-items: stretch;
+}
+
+.hero-actions > * {
+  min-width: 0;
 }
 
 .button {
@@ -206,6 +211,16 @@ h2 em {
 
 .button-light:hover {
   background: #e9eee5;
+}
+
+.hero-actions .button {
+  width: 100%;
+  min-width: 0;
+}
+
+.hero-actions .button-dark {
+  min-width: 0;
+  justify-content: space-between;
 }
 
 .text-link {
@@ -2300,14 +2315,18 @@ figure {
   }
 
   .hero-actions {
-    flex-wrap: wrap;
-    gap: 19px;
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .button {
     min-height: 52px;
     padding-inline: 18px;
     gap: 18px;
+  }
+
+  .hero-actions .text-link {
+    justify-content: flex-start;
   }
 
   .hero-caption {
