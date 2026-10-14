@@ -72,15 +72,31 @@
         </div>
 
         <section class="education-schools" aria-labelledby="education-schools-title">
-          <div class="education-section-heading">
-            <p class="eyebrow">Cerita kunjungan sekolah</p>
-            <h2 id="education-schools-title">Sekolah yang pernah belajar <em>bersama kami.</em></h2>
-            <p>
-              Kunjungan edukasi Naureen Mini Garden telah diikuti oleh sekolah
-              dari berbagai jenjang.
-            </p>
+          <div class="education-school-header">
+            <div class="education-section-heading">
+              <p class="eyebrow">Cerita kunjungan sekolah</p>
+              <h2 id="education-schools-title">Sekolah yang pernah belajar <em>bersama kami.</em></h2>
+              <p>
+                Cari sekolah yang pernah mengikuti kunjungan edukasi di Naureen
+                Mini Garden.
+              </p>
+            </div>
+            <div class="education-school-controls">
+              <label for="education-school-search">Cari nama sekolah</label>
+              <div class="education-school-search-field">
+                <input
+                  id="education-school-search"
+                  type="search"
+                  placeholder="Contoh: TK Immanuel"
+                  autocomplete="off"
+                  aria-controls="education-school-list"
+                />
+              </div>
+              <span class="education-school-search-hint">Tekan dan ketik nama sekolah</span>
+            </div>
           </div>
-          <div class="education-school-grid">
+          <p class="education-school-status" id="education-school-status" role="status" aria-live="polite"></p>
+          <div class="education-school-grid" id="education-school-list">
             <figure class="education-school-card">
               <img
                 src="https://naureenminigarden98.wordpress.com/wp-content/uploads/2025/10/screenshot-2025-10-07-140403.png"
@@ -135,9 +151,570 @@
                 alt="Momen kegiatan kunjungan edukasi di Naureen Mini Garden"
                 loading="lazy"
               />
-              <figcaption>Momen kunjungan edukasi</figcaption>
+              <figcaption>KB. Ukan Itah &amp; TK. Ukan Hasupa</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-ra-cahaya-muslim.png"
+                alt="Kunjungan edukasi TK RA Cahaya Muslim di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK RA Cahaya Muslim</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-paud-bina-insan-mandiri.png"
+                alt="Kunjungan edukasi PAUD Bina Insan Mandiri di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>PAUD Bina Insan Mandiri</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-nur-aini.png"
+                alt="Kunjungan edukasi TK Nur'Aini di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Nur'Aini</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-rumah-bimbel-bu-wiwik.png"
+                alt="Kunjungan edukasi Rumah Bimbel Bu Wiwik di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>Rumah Bimbel Bu Wiwik</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-itihad-4.png"
+                alt="Kunjungan edukasi TK Itihad 4 di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Itihad 4</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-immanuel.png"
+                alt="Kunjungan edukasi TK Immanuel di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Immanuel</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-kb-alyya-sungai-kunjang.png"
+                alt="Kunjungan edukasi KB Alyya Sungai Kunjang di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>KB Alyya Sungai Kunjang</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-forum-anak-samarinda-ulu.png"
+                alt="Kunjungan edukasi Forum Anak Kecamatan dan Kelurahan Samarinda Ulu di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>Forum Anak Kecamatan dan Kelurahan Samarinda Ulu</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-darul-falah-3.png"
+                alt="Kunjungan edukasi TK Darul Falah 3 di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Darul Falah 3</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-kb-tk-salsabila.png"
+                alt="Kunjungan edukasi KB/TK Salsabila di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>KB/TK Salsabila</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-it-imam-syafii-02.png"
+                alt="Kunjungan edukasi TK IT Imam Syafi'i 02 di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK IT Imam Syafi'i 02</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-barunawati-3.png"
+                alt="Kunjungan edukasi TK Barunawati 3 di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Barunawati 3</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-al-firdaus.png"
+                alt="Kunjungan edukasi TK Al Firdaus di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Al Firdaus</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-aisyah.png"
+                alt="Kunjungan edukasi TK Aisyah di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Aisyah</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-sd-cita-hati.png"
+                alt="Kunjungan edukasi SD Cita Hati di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>SD Cita Hati</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-esa-cipta.png"
+                alt="Kunjungan edukasi TK Esa Cipta di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Esa Cipta</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-kartika.png"
+                alt="Kunjungan edukasi TK Kartika di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Kartika</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-mandiri-bakti.png"
+                alt="Kunjungan edukasi TK Mandiri Bakti di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Mandiri Bakti</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-islam-subulussalam.png"
+                alt="Kunjungan edukasi TK Islam Subulussalam di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Islam Subulussalam</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-paud-taam-ainul-muhajir.png"
+                alt="Kunjungan edukasi PAUD Taam Ainul Muhajir di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>PAUD Taam Ainul Muhajir</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-sdn-024-samarinda-utara.png"
+                alt="Kunjungan edukasi SDN 024 Samarinda Utara di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>SDN 024 Samarinda Utara</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-paud-qu-al-fattah.png"
+                alt="Kunjungan edukasi PAUD QU Al-Fattah di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>PAUD QU Al-Fattah</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-pelita-bangsa.png"
+                alt="Kunjungan edukasi TK Pelita Bangsa di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Pelita Bangsa</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-gelatik-kb-cahaya-muda.png"
+                alt="Kunjungan edukasi TK Gelatik/KB Cahaya Muda di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Gelatik/KB Cahaya Muda</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-negeri-6-samarinda.png"
+                alt="Kunjungan edukasi TK Negeri 6 Samarinda di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Negeri 6 Samarinda</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-sd-budi-bakti-samarinda.png"
+                alt="Kunjungan edukasi SD Budi Bakti Samarinda di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>SD Budi Bakti Samarinda</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-tunas-rimba-1.png"
+                alt="Kunjungan edukasi TK Tunas Rimba 1 di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Tunas Rimba 1</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-insani-cendikia.png"
+                alt="Kunjungan edukasi TK Insani Cendikia di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Insani Cendikia</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-ruhui-rahayu.png"
+                alt="Kunjungan edukasi TK Ruhui Rahayu di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Ruhui Rahayu</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-ar-rohim-paud-mumtaz-kids.png"
+                alt="Kunjungan edukasi Ar-Rohim School &amp; PAUD Mumtaz Kids di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>Ar-Rohim School &amp; PAUD Mumtaz Kids</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-paud-ahsanul-amilin.png"
+                alt="Kunjungan edukasi PAUD Ahsanul Amilin di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>PAUD Ahsanul Amilin</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-ra-mentari.png"
+                alt="Kunjungan edukasi RA Mentari di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>RA Mentari</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-kb-tk-bina-ana-prasa-3-smd.png"
+                alt="Kunjungan edukasi KB &amp; TK Bina Ana Prasa 3 SMD di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>KB &amp; TK Bina Ana Prasa 3 SMD</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-aba-2.png"
+                alt="Kunjungan edukasi TK ABA 2 di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK ABA 2</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-unggul-barata.png"
+                alt="Kunjungan edukasi TK Unggul Barata di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Unggul Barata</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-insan-cita-madani.png"
+                alt="Kunjungan edukasi TK Insan Cita Madani di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Insan Cita Madani</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-ummi-mariyam.png"
+                alt="Kunjungan edukasi TK Ummi Mariyam di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Ummi Mariyam</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-darul-falah.png"
+                alt="Kunjungan edukasi TK Darul Falah di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Darul Falah</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-islam-darul-falah-4.png"
+                alt="Kunjungan edukasi TK Islam Darul Falah 4 di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Islam Darul Falah 4</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-rha-islamic-school.png"
+                alt="Kunjungan edukasi RHA Islamic School di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>RHA Islamic School</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-ra-maarif-plus-001.png"
+                alt="Kunjungan edukasi RA Ma'arif Plus 001 di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>RA Ma'arif Plus 001</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-kb-seribu-berlian.png"
+                alt="Kunjungan edukasi KB Seribu Berlian di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>KB Seribu Berlian</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-kb-tk-islam-al-muhajirin.png"
+                alt="Kunjungan edukasi KB/TK Islam Al Muhajirin di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>KB/TK Islam Al Muhajirin</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-paud-budi-luhur.png"
+                alt="Kunjungan edukasi PAUD Budi Luhur di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>PAUD Budi Luhur</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-sd-daarul-falihin-islamic-school.png"
+                alt="Kunjungan edukasi SD Daarul Falihin Islamic School di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>SD Daarul Falihin Islamic School</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tahfiz-tabarok.png"
+                alt="Kunjungan edukasi Tahfiz Tabarok di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>Tahfiz Tabarok</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-sdn-027-smd.png"
+                alt="Kunjungan edukasi SDN 027 SMD di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>SDN 027 SMD</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-paud-langit-biru.png"
+                alt="Kunjungan edukasi PAUD Langit Biru di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>PAUD Langit Biru</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-uli-amalia.png"
+                alt="Kunjungan edukasi TK Uli Amalia di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Uli Amalia</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-rpq-al-mufid.png"
+                alt="Kunjungan edukasi RPQ Al Mufid di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>RPQ Al Mufid</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-sd-islamic-center.png"
+                alt="Kunjungan edukasi SD Islamic Center di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>SD Islamic Center</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-islam-kreatif-salsabila.png"
+                alt="Kunjungan edukasi TK Islam Kreatif Salsabila di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Islam Kreatif Salsabila</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-aba-4.png"
+                alt="Kunjungan edukasi TK ABA 4 di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK ABA 4</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-unggul-bharata.png"
+                alt="Kunjungan edukasi TK Unggul Bharata di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Unggul Bharata</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-kb-selyca.png"
+                alt="Kunjungan edukasi TK dan KB Selyca di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK &amp; KB Selyca</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-salsabila.png"
+                alt="Kunjungan edukasi TK Salsabila di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Salsabila</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-darul-falihin-school.png"
+                alt="Kunjungan edukasi Darul Falihin School di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>Darul Falihin School</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-kb-tkit-raudhatul-jannah.png"
+                alt="Kunjungan edukasi KB TKIT Raudhatul Jannah di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>KB TKIT Raudhatul Jannah</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-kb-bintang-bunda.png"
+                alt="Kunjungan edukasi TK dan KB Bintang Bunda di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK &amp; KB Bintang Bunda</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-sd-cita-hati-visit.png"
+                alt="Kunjungan edukasi SD Cita Hati di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>SD Cita Hati</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-paud-tk-gelatik-kb-cahaya-muda.png"
+                alt="Kunjungan edukasi PAUD dan TK Gelatik serta KB Cahaya Muda di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>PAUD/TK Gelatik &amp; KB Cahaya Muda</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-tpa-ummi-mariyam.png"
+                alt="Kunjungan edukasi TK/TPA Ummi Mariyam di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK/TPA Ummi Mariyam</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-ruhui-rahayu-visit.png"
+                alt="Kunjungan edukasi TK Ruhui Rahayu di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Ruhui Rahayu</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-kb-permata-bangsa-dharma-mulia.png"
+                alt="Kunjungan edukasi KB Permata Bangsa dan KB Dharma Mulia Tenggarong Seberang di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>KB Permata Bangsa &amp; KB Dharma Mulia Tenggarong Seberang</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-paud-puspa-as-syifa.png"
+                alt="Kunjungan edukasi PAUD Puspa As-Syifa di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>PAUD Puspa As-Syifa</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-tk-anak-bangsa.png"
+                alt="Kunjungan edukasi TK Anak Bangsa di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>TK Anak Bangsa</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-slb-mutiara-kasih.png"
+                alt="Kunjungan edukasi SLB Mutiara Kasih di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>SLB Mutiara Kasih</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-paud-insani-cendekia.png"
+                alt="Kunjungan edukasi PAUD Insani Cendekia di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>PAUD Insani Cendekia</figcaption>
+            </figure>
+            <figure class="education-school-card">
+              <img
+                src="assets/naureen-education-kb-al-mardhiyah.png"
+                alt="Kunjungan edukasi KB Al-Mardhiyah di Naureen Mini Garden"
+                loading="lazy"
+              />
+              <figcaption>KB Al-Mardhiyah</figcaption>
             </figure>
           </div>
+          <button
+            class="education-school-more"
+            id="education-school-more"
+            type="button"
+            aria-expanded="false"
+            aria-controls="education-school-list"
+          >
+            Lihat semua sekolah
+          </button>
         </section>
 
         <div class="education-ticket" aria-label="Harga tiket masuk edukasi">
@@ -169,7 +746,7 @@
             biaya tambahan dari tiket masuk.
           </p>
         </div>
-
+ukasi
         <div class="education-packages">
           <article class="education-package">
             <div class="education-package-photos">
@@ -390,9 +967,59 @@
         </a>
       </p>
     </footer>
+    <dialog class="lightbox education-lightbox" aria-label="Foto kegiatan edukasi">
+      <button class="lightbox-close" type="button" aria-label="Tutup foto">×</button>
+      <img src="" alt="" />
+      <p></p>
+    </dialog>
     <script>
       const menuToggle = document.querySelector(".menu-toggle");
       const navigation = document.querySelector(".main-navigation");
+      const educationLightbox = document.querySelector(".education-lightbox");
+      const educationLightboxImage = educationLightbox.querySelector("img");
+      const educationLightboxCaption = educationLightbox.querySelector("p");
+      const schoolSearch = document.querySelector("#education-school-search");
+      const schoolCards = [...document.querySelectorAll(".education-school-card")];
+      const schoolStatus = document.querySelector("#education-school-status");
+      const schoolMoreButton = document.querySelector("#education-school-more");
+      const initialSchoolCount = 4;
+      let showAllSchools = false;
+
+      const updateSchoolList = () => {
+        const query = schoolSearch.value.trim().toLocaleLowerCase("id");
+        let matchingSchools = 0;
+
+        schoolCards.forEach((card, index) => {
+          const schoolName = card.querySelector("figcaption").textContent.toLocaleLowerCase("id");
+          const matchesSearch = schoolName.includes(query);
+          const isVisible = matchesSearch && (query !== "" || showAllSchools || index < initialSchoolCount);
+
+          card.hidden = !isVisible;
+          if (matchesSearch) matchingSchools += 1;
+        });
+
+        if (query) {
+          schoolStatus.textContent = matchingSchools
+            ? `${matchingSchools} sekolah ditemukan.`
+            : "Sekolah tidak ditemukan.";
+          schoolMoreButton.hidden = true;
+        } else {
+          schoolStatus.textContent = showAllSchools
+            ? `Menampilkan semua ${matchingSchools} sekolah.`
+            : `Menampilkan ${Math.min(initialSchoolCount, matchingSchools)} dari ${matchingSchools} sekolah.`;
+          schoolMoreButton.hidden = matchingSchools <= initialSchoolCount;
+          schoolMoreButton.textContent = showAllSchools ? "Tampilkan lebih sedikit" : "Lihat semua sekolah";
+          schoolMoreButton.setAttribute("aria-expanded", String(showAllSchools));
+        }
+      };
+
+      schoolSearch.addEventListener("input", updateSchoolList);
+      schoolMoreButton.addEventListener("click", () => {
+        showAllSchools = !showAllSchools;
+        updateSchoolList();
+      });
+
+      updateSchoolList();
 
       menuToggle.addEventListener("click", () => {
         const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
@@ -407,6 +1034,44 @@
           menuToggle.setAttribute("aria-label", "Buka navigasi");
           navigation.classList.remove("is-open");
         }
+      });
+
+      document.querySelectorAll("main img").forEach((image) => {
+        image.classList.add("education-photo");
+        image.tabIndex = 0;
+        image.setAttribute("role", "button");
+        image.setAttribute("aria-label", `Perbesar foto: ${image.alt}`);
+
+        const openImage = () => {
+          educationLightboxImage.src = image.currentSrc || image.src;
+          educationLightboxImage.alt = image.alt;
+          educationLightboxCaption.textContent = image.alt;
+          educationLightbox.showModal();
+        };
+
+        image.addEventListener("click", openImage);
+        image.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openImage();
+          }
+        });
+      });
+
+      educationLightbox.querySelector(".lightbox-close").addEventListener("click", () => {
+        educationLightbox.close();
+      });
+
+      educationLightbox.addEventListener("click", (event) => {
+        if (event.target === educationLightbox) {
+          educationLightbox.close();
+        }
+      });
+
+      educationLightbox.addEventListener("close", () => {
+        educationLightboxImage.src = "";
+        educationLightboxImage.alt = "";
+        educationLightboxCaption.textContent = "";
       });
     </script>
   </body>

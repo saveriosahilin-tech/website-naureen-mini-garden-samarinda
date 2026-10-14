@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="507" height="733" viewBox="0 0 507 733" role="img" aria-labelledby="title">
+  <title id="title">Kunjungan edukasi KB. Ukan Itah &amp; TK. Ukan Hasupa di Naureen Mini Garden</title>
+  <image x="0" y="0" width="507" height="733" xlink:href="kunjungan-edukasi-ukan-itah-hasupa-source.webp" />
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e0f7f5" />
+      <stop offset="1" stop-color="#d7f3f1" />
+    </linearGradient>
+  </defs>
+  <rect x="267" y="136" width="240" height="68" rx="3" fill="url(#panel)" />
+  <g fill="#173e30" font-family="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif" font-weight="900" text-anchor="middle">
+    <text x="387" y="157" font-size="17" letter-spacing=".2">KUNJUNGAN EDUKASI</text>
+    <text x="387" y="179" font-size="14">KB. UKAN ITAH &amp;</text>
+    <text x="387" y="197" font-size="14">TK. UKAN HASUPA</text>
+  </g>
+</svg>
