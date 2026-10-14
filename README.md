@@ -1,7 +1,8 @@
 # Naureen Mini Garden
 
 Halaman `galeri.html` menampilkan foto, tautan video ke akun resmi TikTok dan Instagram, serta rating dan testimoni pengunjung yang menggunakan penyimpanan ulasan situs. Halaman `sejarah.html` memuat linimasa perjalanan Naureen Mini Garden. Halaman `sewa-gazebo.html` menampilkan pilihan gazebo dan cottage, harga per sesi, fasilitas, jadwal, dan kontak admin untuk pemesanan. Halaman `terapi-ikan.html` menampilkan informasi terapi ikan berbayar beserta pilihan harga dan durasi. Beranda juga memuat informasi terapi ikan gratis dan aktivitas pemancingan.
-Halaman `edukasi.html` memuat tiket masuk, fasilitas edukasi gratis, pilihan paket kegiatan, dan dokumentasi kegiatan edukasi.
+Halaman `edukasi.html` memuat informasi kunjungan edukasi untuk jenjang TK hingga SMA, sekolah yang pernah berkunjung, tiket masuk, fasilitas edukasi gratis, pilihan paket kegiatan, dan dokumentasi kegiatan edukasi. Tombol di galeri mengarah ke halaman ini.
+Halaman `flora-fauna.html` memperkenalkan sembilan bunga dan sembilan fauna yang ada di Naureen Mini Garden. Foto flora dan fauna dapat dibuka dalam tampilan foto yang lebih besar. Tombol di beranda mengarah ke halaman ini.
 
 ## Rating dan ulasan pengunjung
 
